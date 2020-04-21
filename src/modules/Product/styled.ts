@@ -1,23 +1,23 @@
 import styled, { keyframes } from "styled-components"
-import { respondTo } from "core/assets/styles/_respontTo"
+import breakpoint from "resources/styles/breakpoint"
 
-const Wrapper = styled.article`
+const Article = styled.article`
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
   padding: 20px 100px;
 
-  ${respondTo.laptop`
-		flex-direction: column;
-	`}
+  ${breakpoint.desktop} {
+    flex-direction: column;
+  }
 
   > * + * {
     margin-left: 20px;
 
-    ${respondTo.laptop`
+    ${breakpoint.desktop} {
       margin-top: 40px;
-    `}
+    }
   }
 `
 
@@ -27,7 +27,7 @@ const run = keyframes`
   100%{ left: -74px;}
 `
 
-const SideAnimation = styled.section`
+const Animation = styled.section`
   position: absolute;
   animation: ease-in-out infinite alternate;
   animation-name: ${run};
@@ -42,6 +42,6 @@ const SideAnimation = styled.section`
 `
 
 export default {
-  SideAnimation,
-  Wrapper,
+  Animation,
+  Article,
 }

@@ -2,8 +2,9 @@ import React from "react"
 import { ReactComponent as CoronavirusSlide1SVG } from "core/assets/imgs/coronavirus-slide1.svg"
 import { ReactComponent as CoronavirusSlide2SVG } from "core/assets/imgs/coronavirus-slide2.svg"
 import { ReactComponent as CoronavirusSlide3SVG } from "core/assets/imgs/coronavirus-slide3.svg"
+import { Slide } from "../interfaces"
 
-export default [
+const slides: Slide[] = [
   {
     image: <CoronavirusSlide1SVG />,
     title: "Escanear proximidades",
@@ -23,3 +24,5 @@ export default [
       "Fornecendo dados para rastreamento em tempo real, ajudando equipes de saúde.",
   },
 ]
+
+export default slides

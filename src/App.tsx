@@ -2,12 +2,12 @@ import React from "react"
 // import { BrowserRouter as Router } from 'react-router-dom'
 import { ThemeProvider } from "styled-components"
 import { useDarkMode } from "core/hooks/useDarkMode"
-import Toggle from "./core/components/Toggle"
+import Toggle from "core/components/Toggle"
 import Navbar from "core/components/Navbar"
 import Product from "modules/Product"
 // import Routes from './modules/Routes'
-import { lightTheme, darkTheme } from "core/assets/styles/theme"
-import { GlobalStyles } from "core/assets/styles/global"
+import { lightTheme, darkTheme } from "resources/styles/theme"
+import { GlobalStyles } from "resources/styles/global"
 import Styled from "./styled"
 
 function App() {

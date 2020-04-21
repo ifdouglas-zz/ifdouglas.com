@@ -3,8 +3,9 @@ import Formatagram from "./Formatagram"
 import DiseaseTracker from "./DiseaseTracker"
 import { ReactComponent as FormatagramSVG } from "core/assets/imgs/formatagram.svg"
 import { ReactComponent as CoronavirusSVG } from "core/assets/imgs/coronavirus.svg"
+import { Product } from "./interfaces"
 
-export default [
+const products: Product[] = [
   {
     logo: <FormatagramSVG />,
     title: "Formatagram",
@@ -26,3 +27,5 @@ export default [
     data: DiseaseTracker,
   },
 ]
+
+export default products

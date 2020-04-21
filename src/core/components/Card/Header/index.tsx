@@ -1,34 +1,25 @@
-import React, { ReactNode } from "react"
+import React from "react"
 import Text from "core/components/Text"
 // import { ReactComponent as NoLogoSVG } from "core/assets/imgs/no-logo.svg"
+import { Product } from "modules/Product/interfaces"
 import Styled from "./styled"
 
-interface Props {
-  logo: ReactNode
-  title: string
-  subtitle: string
-  technology: string
-  version: string
-}
-
-const CardHeader = ({ logo, title, subtitle, technology, version }: Props) => {
-  const renderLogo = () => <Styled.Logo>{logo}</Styled.Logo>
-  const renderTitle = () => <Text type="h1"> {title} </Text>
-  const renderSubtitle = () => <Text type="h3"> {subtitle} </Text>
-  const renderVersion = () => <Text type="h6"> {version} </Text>
-  const renderTechnology = () => <Text type="h6"> {technology} </Text>
-
-  return (
-    <Styled.Header>
-      {renderLogo()}
-      <Styled.Title>
-        {renderTitle()}
-        {renderSubtitle()}
-        {renderVersion()}
-        {renderTechnology()}
-      </Styled.Title>
-    </Styled.Header>
-  )
-}
+const CardHeader = ({
+  logo,
+  title,
+  subtitle,
+  technology,
+  version,
+}: Product) => (
+  <Styled.Header>
+    <Styled.Logo>{logo}</Styled.Logo>
+    <Styled.Title>
+      <Text.h1>{title}</Text.h1>
+      <Text.h3>{subtitle}</Text.h3>
+      <Text.h6>{version}</Text.h6>
+      <Text.h6>{technology}</Text.h6>
+    </Styled.Title>
+  </Styled.Header>
+)
 
 export default CardHeader

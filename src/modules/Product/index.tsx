@@ -9,15 +9,16 @@ import Slider from "core/components/Slider"
 import SliderItem from "core/components/Slider/Item"
 import { ReactComponent as MeSVG } from "core/assets/imgs/me2.svg"
 import products from "./data"
+import { Product, Slide } from "./interfaces"
 import Styled from "./styled"
 
-const Product = () => {
-  const renderHeader = ({ ...rest }) => <CardHeader {...rest} />
+const Products = () => {
+  const renderHeader = (product: Product) => <CardHeader {...product} />
 
-  const renderBody = ({ data }) => (
+  const renderBody = ({ data }: Pick<Product, "data">) => (
     <CardBody>
       <Slider>
-        {data.map(({ image, title, description }) => (
+        {data.map(({ image, title, description }: Slide) => (
           <SliderItem
             key={title}
             image={image}
@@ -29,33 +30,35 @@ const Product = () => {
     </CardBody>
   )
 
-  const renderFooter = ({ linkApple, linkGoogle }) => (
+  const renderFooter = ({
+    linkApple,
+    linkGoogle,
+  }: Pick<Product, "linkApple" | "linkGoogle">) => (
     <CardFooter>
       <ButtonApple url={linkApple} />
       <ButtonGoogle url={linkGoogle} />
     </CardFooter>
   )
 
-  const renderCard = (product) => (
-    <Card
-      key={product.data.title}
-      header={renderHeader(product)}
-      body={renderBody(product)}
-      footer={renderFooter(product)}
-    />
+  const renderCard = (product: Product) => (
+    <Card key={product.title}>
+      {renderHeader(product)}
+      {renderBody(product)}
+      {renderFooter(product)}
+    </Card>
   )
 
   return (
-    <Styled.Wrapper>
-      <Styled.SideAnimation>
+    <Styled.Article>
+      <Styled.Animation>
         <MeSVG />
-      </Styled.SideAnimation>
+      </Styled.Animation>
       {products.map((product) => renderCard(product))}
       {/* <Styled.Me>
         <MeSVG />
       </Styled.Me> */}
-    </Styled.Wrapper>
+    </Styled.Article>
   )
 }
 
-export default Product
+export default Products
