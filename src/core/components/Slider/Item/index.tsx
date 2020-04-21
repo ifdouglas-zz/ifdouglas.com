@@ -11,9 +11,9 @@ interface Props {
 const SliderItem = ({ image, title, description }: Props) => (
   <Styled.Item>
     {image}
-    <Text type="h2">{title}</Text>
+    <Text.h2>{title}</Text.h2>
     <Styled.Caption>
-      <Text type="h5">{description}</Text>
+      <Text.h5>{description}</Text.h5>
     </Styled.Caption>
   </Styled.Item>
 )

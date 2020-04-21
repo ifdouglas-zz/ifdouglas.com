@@ -1,7 +1,7 @@
 import React from "react"
-import { ReactComponent as CoronavirusSlide1SVG } from "core/assets/imgs/coronavirus-slide1.svg"
-import { ReactComponent as CoronavirusSlide2SVG } from "core/assets/imgs/coronavirus-slide2.svg"
-import { ReactComponent as CoronavirusSlide3SVG } from "core/assets/imgs/coronavirus-slide3.svg"
+import { ReactComponent as CoronavirusSlide1SVG } from "resources/imgs/coronavirus-slide1.svg"
+import { ReactComponent as CoronavirusSlide2SVG } from "resources/imgs/coronavirus-slide2.svg"
+import { ReactComponent as CoronavirusSlide3SVG } from "resources/imgs/coronavirus-slide3.svg"
 import { Slide } from "../interfaces"
 
 const slides: Slide[] = [

@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, Dispatch, SetStateAction } from "react"
 
-export const useDarkMode = () => {
-  const [theme, setTheme] = useState("dark")
+export const useDarkMode = (
+  state: string
+): [string, Dispatch<SetStateAction<string>>, boolean] => {
+  const [theme, setTheme] = useState<string>(state)
   const [componentMounted, setComponentMounted] = useState(false)
-  const setMode = (mode) => {
+  const setMode = (mode: string) => {
     window.localStorage.setItem("theme", mode)
     setTheme(mode)
   }

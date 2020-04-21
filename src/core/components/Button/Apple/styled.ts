@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { ReactComponent as ButtonAppleSVG } from "core/assets/imgs/apple.svg"
-import { ReactComponent as ButtonAppleSoonSVG } from "core/assets/imgs/apple-soon.svg"
+import { ReactComponent as ButtonAppleSVG } from "resources/imgs/apple.svg"
+import { ReactComponent as ButtonAppleSoonSVG } from "resources/imgs/apple-soon.svg"
 
 const DefaultSVG = styled(ButtonAppleSVG)`
   #Apple-Button {

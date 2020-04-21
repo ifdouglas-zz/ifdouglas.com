@@ -10,7 +10,7 @@ const useDynamicImport = (name: string): [string] => {
       const abortController = new Promise((resolve) => {
         abort = resolve
       })
-      const svgData = await import(`core/assets/imgs/${name}.svg`)
+      const svgData = await import(`resources/imgs/${name}.svg`)
 
       Promise.race([abortController, svgData])
 

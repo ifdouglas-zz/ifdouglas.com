@@ -1,6 +1,6 @@
 import React from "react"
 import Text from "core/components/Text"
-// import { ReactComponent as NoLogoSVG } from "core/assets/imgs/no-logo.svg"
+// import { ReactComponent as NoLogoSVG } from "resources/imgs/no-logo.svg"
 import { Product } from "modules/Product/interfaces"
 import Styled from "./styled"
 

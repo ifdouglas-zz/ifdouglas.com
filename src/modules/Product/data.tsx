@@ -1,8 +1,8 @@
 import React from "react"
 import Formatagram from "./Formatagram"
 import DiseaseTracker from "./DiseaseTracker"
-import { ReactComponent as FormatagramSVG } from "core/assets/imgs/formatagram.svg"
-import { ReactComponent as CoronavirusSVG } from "core/assets/imgs/coronavirus.svg"
+import { ReactComponent as FormatagramSVG } from "resources/imgs/formatagram.svg"
+import { ReactComponent as CoronavirusSVG } from "resources/imgs/coronavirus.svg"
 import { Product } from "./interfaces"
 
 const products: Product[] = [

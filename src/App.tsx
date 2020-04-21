@@ -11,7 +11,7 @@ import { GlobalStyles } from "resources/styles/global"
 import Styled from "./styled"
 
 function App() {
-  const [theme, toggleTheme] = useDarkMode()
+  const [theme, toggleTheme] = useDarkMode("dark")
   const themeMode = theme === "light" ? lightTheme : darkTheme
 
   return (

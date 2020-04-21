@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import { ReactComponent as ButtonGoogleSVG } from "core/assets/imgs/google-play.svg"
-import { ReactComponent as ButtonGoogleSoonSVG } from "core/assets/imgs/google-soon.svg"
+import { ReactComponent as ButtonGoogleSVG } from "resources/imgs/google-play.svg"
+import { ReactComponent as ButtonGoogleSoonSVG } from "resources/imgs/google-soon.svg"
 
 const DefaultSVG = styled(ButtonGoogleSVG)`
   #Google-Play-Button {

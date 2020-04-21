@@ -1,7 +1,6 @@
 import styled from "styled-components"
-import Slick from "react-slick"
 
-const Slider = styled(Slick)`
+const Slider = styled.div`
   width: 330px;
   margin-left: 15px;
 

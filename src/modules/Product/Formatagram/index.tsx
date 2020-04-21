@@ -1,7 +1,7 @@
 import React from "react"
-import { ReactComponent as FormatagramSlide1SVG } from "core/assets/imgs/formatagram-slide1.svg"
-import { ReactComponent as FormatagramSlide2SVG } from "core/assets/imgs/formatagram-slide2.svg"
-import { ReactComponent as FormatagramSlide3SVG } from "core/assets/imgs/formatagram-slide3.svg"
+import { ReactComponent as FormatagramSlide1SVG } from "resources/imgs/formatagram-slide1.svg"
+import { ReactComponent as FormatagramSlide2SVG } from "resources/imgs/formatagram-slide2.svg"
+import { ReactComponent as FormatagramSlide3SVG } from "resources/imgs/formatagram-slide3.svg"
 
 export default [
   {
