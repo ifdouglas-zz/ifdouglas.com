@@ -1,12 +1,16 @@
 import styled from "styled-components"
-import FontsSize from "./constants"
-import { Props } from "."
+import get from "lodash/get"
+import { FontSize } from "./constants"
+
+interface Props {
+  as: string
+}
 
 const Text = styled.span<Props>`
   display: flex;
   flex-direction: row;
-  font-size: ${({ as }) => FontsSize[as]};
-  line-height: ${({ as }) => FontsSize[as]};
+  font-size: ${({ as }) => get(FontSize, as, "")};
+  line-height: ${({ as }) => get(FontSize, as, "")};
 `
 
 export default {

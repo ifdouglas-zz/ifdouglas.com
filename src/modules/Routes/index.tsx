@@ -1,7 +1,7 @@
 import React from "react"
 import { Switch, Route } from "react-router-dom"
-import Content from "core/modules/Content"
-import Product from "core/modules/Product"
+import Content from "modules/Content"
+import Product from "modules/Product"
 import { PATH_CONTENT, PATH_PRODUCTS } from "core/constants/paths"
 
 const Routes = () => (

@@ -3,30 +3,12 @@ import { createGlobalStyle } from "styled-components"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import Roobert from "../fonts/Roobert-Regular.otf"
-import RoobertLight from "../fonts/Roobert-Light.otf"
-import RoobertMedium from "../fonts/Roobert-Medium.otf"
-import RoobertBold from "../fonts/Roobert-Bold.otf"
-
 export const GlobalStyles = createGlobalStyle`
   @font-face {
-    font-family: Roobert;
-    src: url(${Roobert});
-  }
-
-  @font-face {
-    font-family: RoobertLight;
-    src: url(${RoobertLight});
-  }
-
-  @font-face {
-    font-family: RoobertMedium;
-    src: url(${RoobertMedium});
-  }
-
-  @font-face {
-    font-family: RoobertBold;
-    src: url(${RoobertBold});
+    font-family: 'Roobert';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Roobert-Regular.otf');
   }
 
   *,
@@ -43,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: Roobert, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Roobert', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     transition: all 0.25s linear;
     -webkit-font-smoothing: antialiased;

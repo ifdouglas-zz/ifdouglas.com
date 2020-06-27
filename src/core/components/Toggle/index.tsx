@@ -5,7 +5,7 @@ import Styled from "./styled"
 
 export interface Props {
   theme: string
-  toggleTheme: React.Dispatch<React.SetStateAction<string>>
+  toggleTheme: Function
 }
 
 const Toggle = ({ theme, toggleTheme }: Props) => {

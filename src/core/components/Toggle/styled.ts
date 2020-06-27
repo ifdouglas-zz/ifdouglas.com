@@ -1,6 +1,10 @@
 import styled from "styled-components"
 
-const Button = styled.button`
+interface Button {
+  lightTheme: boolean
+}
+
+const Button = styled.button<Button>`
   background: ${({ theme }) => theme.gradient};
   border: 2px solid ${({ theme }) => theme.toggleBorder};
   border-radius: 30px;
@@ -14,7 +18,7 @@ const Button = styled.button`
   padding: 0.5rem;
   position: relative;
   width: 80px;
-  height: 40px;
+  min-height: 40px;
 
   svg {
     height: auto;
